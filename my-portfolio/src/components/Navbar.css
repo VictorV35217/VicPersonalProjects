@@ -20,6 +20,10 @@ nav{
     align-items: center;
 }
 
+.links-container svg{
+    margin-right: 10px;
+}
+
 nav a{
     height: 100%;
     padding: 0 20px;
@@ -27,13 +31,12 @@ nav a{
     align-items: center;
     text-decoration: none;
     color: var(--text-color);
-    transition: height .5s;
 }
 
 nav a:hover{
     background-color: var(--accent-color);
     border-radius: 20px;
-    
+    transition: .5s ease-in;
 }
 
 nav .home-link{
@@ -53,6 +56,7 @@ nav svg{
 }
 
 @media(max-width: 630px){
+
     .links-container{
         flex-direction: column;
         align-items: flex-start;
@@ -61,12 +65,13 @@ nav svg{
         top: 0;
         right: -100%;
         z-index: 10;
-        width: 125px;
+        width: 200px;
 
         background-color: var(--color-1);
         box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
         transition: .5s ease-out;
     }
+
 
     nav a{
         box-sizing: border-box;
